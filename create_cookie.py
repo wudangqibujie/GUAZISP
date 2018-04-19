@@ -41,5 +41,5 @@ def create_cooki_pool():
     f.close()
 
 if __name__ == '__main__':
-    create_cooki_pool()
+    pass
 

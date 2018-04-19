@@ -20,12 +20,13 @@ class City:
         da = eval(f.read().encode('latin-1').decode('unicode_escape'))
         # da1 = list(da["data"]["cityList"]["all"].values())[0][0]["pinyin"]
         da1 = list(da["data"]["cityList"]["all"].values())
+        print(da1)
         for i in da1:
             for j in i:
                 if "id" in j:
                     data_dict = dict()
                     data_dict["id"]=j["id"]
-                    data_dict["name"] = j["id"]
+                    data_dict["name"] = j["name"]
                     data_dict["domain"] = j["domain"]
                     data_dict["pinyin"] = j["pinyin"]
                     data_dict["location"] = j["location"]
@@ -41,7 +42,6 @@ class City:
 
 
 if __name__ == '__main__':
-    a = City()
-    a.cityda2mongo()
+    pass
 
 
