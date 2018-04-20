@@ -7,3 +7,6 @@ class UrlManage:
         self.r.sadd("guazi_init_task",url)
     def new_url(self,newurl):
         self.r.sadd("new_task",newurl)
+    def old_url(self,oldurl):
+        self.r.sadd("old_task",oldurl)
+

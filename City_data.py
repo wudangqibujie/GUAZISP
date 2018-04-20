@@ -27,6 +27,7 @@ class City:
                     data_dict = dict()
                     data_dict["id"]=j["id"]
                     data_dict["name"] = j["name"]
+                    print(j["name"])
                     data_dict["domain"] = j["domain"]
                     data_dict["pinyin"] = j["pinyin"]
                     data_dict["location"] = j["location"]
@@ -42,6 +43,7 @@ class City:
 
 
 if __name__ == '__main__':
-    pass
+    c = City()
+    c.code2cz()
 
 
